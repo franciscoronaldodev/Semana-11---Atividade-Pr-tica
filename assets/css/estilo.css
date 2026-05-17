@@ -252,3 +252,25 @@ footer {
     justify-content: center;
   }
 }
+
+/* ── BOTAO SAIR ── */
+.btn-sair {
+  background-color: transparent;
+  border: 1px solid #7c3aed;
+  color: #c084fc;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 0.4rem 0.9rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: background-color 0.2s, color 0.2s;
+  white-space: nowrap;
+}
+
+.btn-sair:hover {
+  background-color: #7c3aed;
+  color: #fff;
+}

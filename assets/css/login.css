@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #0d0d1a;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-wrapper {
+  width: 100%;
+  max-width: 420px;
+  padding: 1rem;
+}
+
+.login-card {
+  background-color: #1a1a2e;
+  border: 1px solid #2a1f4a;
+  border-radius: 1rem;
+  padding: 2.5rem 2rem;
+  box-shadow: 0 8px 40px rgba(124, 58, 237, 0.25);
+}
+
+/* ── MARCA ── */
+.login-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 0.4rem;
+}
+
+.login-logo {
+  background-color: #7c3aed;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1.3rem;
+  border-radius: 50%;
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-titulo {
+  font-size: 1.8rem;
+  color: #f0e6ff;
+  letter-spacing: 0.05rem;
+}
+
+.login-subtitulo {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+}
+
+/* ── FORMULÁRIO ── */
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.campo label {
+  font-size: 0.85rem;
+  color: #c084fc;
+  font-weight: 600;
+}
+
+.campo label i {
+  margin-right: 0.3rem;
+}
+
+.campo input {
+  background-color: #0d0d1a;
+  border: 1px solid #2a1f4a;
+  border-radius: 0.5rem;
+  padding: 0.7rem 0.9rem;
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+  width: 100%;
+}
+
+.campo input::placeholder {
+  color: #444;
+}
+
+.campo input:focus {
+  border-color: #7c3aed;
+  box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.2);
+}
+
+/* ── INPUT SENHA COM BOTÃO MOSTRAR ── */
+.input-senha-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-senha-wrapper input {
+  padding-right: 2.8rem;
+}
+
+.btn-mostrar {
+  position: absolute;
+  right: 0.7rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #666;
+  font-size: 0.9rem;
+  padding: 0.2rem;
+  transition: color 0.2s;
+}
+
+.btn-mostrar:hover {
+  color: #c084fc;
+}
+
+/* ── MENSAGEM DE ERRO ── */
+.msg-erro {
+  color: #f87171;
+  font-size: 0.82rem;
+  min-height: 1.2rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ── BOTÃO ENTRAR ── */
+.btn-login {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #7c3aed;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s, transform 0.1s;
+  letter-spacing: 0.03rem;
+}
+
+.btn-login:hover {
+  background-color: #6d28d9;
+}
+
+.btn-login:active {
+  transform: scale(0.98);
+}
+
+/* ── DICA DE ACESSO ── */
+.login-dica {
+  margin-top: 1.5rem;
+  text-align: center;
+  font-size: 0.78rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.login-dica i {
+  color: #7c3aed;
+  margin-right: 0.2rem;
+}
+
+.login-dica strong {
+  color: #a78bfa;
+}
+
+/* ── RESPONSIVO ── */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 2rem 1.2rem;
+  }
+}

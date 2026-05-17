@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Cena Pop</title>
+    <link rel="stylesheet" href="assets/css/login.css" />
+    <script src="https://kit.fontawesome.com/b581796bdd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="login-wrapper">
+      <div class="login-card">
+        <div class="login-brand">
+          <div class="login-logo">C</div>
+          <h1 class="login-titulo">Cena Pop</h1>
+        </div>
+        <p class="login-subtitulo">Acesse sua conta para continuar</p>
+
+        <form id="form-login" onsubmit="return false;">
+          <div class="campo">
+            <label for="email">
+              <i class="fa-solid fa-envelope"></i> E-mail
+            </label>
+            <input
+              type="email"
+              id="email"
+              placeholder="seu@email.com"
+              autocomplete="email"
+            />
+          </div>
+
+          <div class="campo">
+            <label for="senha">
+              <i class="fa-solid fa-lock"></i> Senha
+            </label>
+            <div class="input-senha-wrapper">
+              <input
+                type="password"
+                id="senha"
+                placeholder="••••••••"
+                autocomplete="current-password"
+              />
+              <button type="button" class="btn-mostrar" onclick="alternarSenha()">
+                <i class="fa-solid fa-eye" id="icone-olho"></i>
+              </button>
+            </div>
+          </div>
+
+          <p id="msg-erro" class="msg-erro" aria-live="polite"></p>
+
+          <button type="submit" class="btn-login" onclick="validarLogin()">
+            Entrar
+          </button>
+        </form>
+
+        <p class="login-dica">
+          <i class="fa-solid fa-circle-info"></i>
+          Use <strong>admin@cenapop.com</strong> e senha <strong>cena2026</strong>
+        </p>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

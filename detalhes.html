@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
@@ -12,9 +12,9 @@
     <header>
       <div class="logo">C</div>
       <h1 class="titulo">Cena Pop</h1>
-      <div class="menu-hamburguer">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+      <button class="btn-sair" onclick="sair()">
+        <i class="fa-solid fa-arrow-right-from-bracket"></i> Sair
+      </button>
     </header>
     <section>
       <nav>
@@ -41,7 +41,7 @@
             <a href="#">
               <div class="opcao">
                 <div class="icone-inicial"><i class="fa-solid fa-tv"></i></div>
-                <div class="rotulo">Séries</div>
+                <div class="rotulo">Series</div>
                 <div class="icone-final"><i class="fa-solid fa-chevron-right"></i></div>
               </div>
             </a>
@@ -50,7 +50,7 @@
             <a href="#">
               <div class="opcao">
                 <div class="icone-inicial"><i class="fa-solid fa-music"></i></div>
-                <div class="rotulo">Música</div>
+                <div class="rotulo">Musica</div>
                 <div class="icone-final"><i class="fa-solid fa-chevron-right"></i></div>
               </div>
             </a>
@@ -78,6 +78,7 @@
 
     <script src="app.js"></script>
     <script>
+      verificarLogin();
       renderizarDetalhes();
     </script>
   </body>
