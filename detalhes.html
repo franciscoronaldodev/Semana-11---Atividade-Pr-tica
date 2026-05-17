@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes | Cena Pop</title>
+    <link rel="stylesheet" href="assets/css/estilo.css" />
+    <link rel="stylesheet" href="assets/css/detalhes.css" />
+    <script src="https://kit.fontawesome.com/b581796bdd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <div class="logo">C</div>
+      <h1 class="titulo">Cena Pop</h1>
+      <div class="menu-hamburguer">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+    <section>
+      <nav>
+        <ul class="menu-lateral">
+          <li>
+            <a href="index.html">
+              <div class="opcao">
+                <div class="icone-inicial"><i class="fa-solid fa-star"></i></div>
+                <div class="rotulo">Destaques</div>
+                <div class="icone-final"><i class="fa-solid fa-chevron-right"></i></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="opcao">
+                <div class="icone-inicial"><i class="fa-solid fa-film"></i></div>
+                <div class="rotulo">Cinema</div>
+                <div class="icone-final"><i class="fa-solid fa-chevron-right"></i></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="opcao">
+                <div class="icone-inicial"><i class="fa-solid fa-tv"></i></div>
+                <div class="rotulo">Séries</div>
+                <div class="icone-final"><i class="fa-solid fa-chevron-right"></i></div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <div class="opcao">
+                <div class="icone-inicial"><i class="fa-solid fa-music"></i></div>
+                <div class="rotulo">Música</div>
+                <div class="icone-final"><i class="fa-solid fa-chevron-right"></i></div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <main class="container-detalhe">
+        <a href="index.html" class="btn-voltar">
+          <i class="fa-solid fa-arrow-left"></i> Voltar para destaques
+        </a>
+        <article class="artigo-detalhe">
+          <p class="detalhe-classificacao">
+            <span id="detalhe-categoria" class="categoria-da-noticia"></span>
+            <span id="detalhe-data" class="data-da-noticia"></span>
+          </p>
+          <h1 id="detalhe-titulo" class="detalhe-titulo"></h1>
+          <p id="detalhe-descricao" class="detalhe-descricao"></p>
+          <img id="detalhe-imagem" class="detalhe-imagem" src="" alt="" />
+          <p id="detalhe-conteudo" class="detalhe-conteudo"></p>
+          <p id="detalhe-autor" class="detalhe-autor"></p>
+        </article>
+      </main>
+    </section>
+    <footer>&copy; Cena Pop, 2026 &mdash; Tudo sobre entretenimento</footer>
+
+    <script src="app.js"></script>
+    <script>
+      renderizarDetalhes();
+    </script>
+  </body>
+</html>
