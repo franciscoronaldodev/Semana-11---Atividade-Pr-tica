@@ -62,7 +62,7 @@
 .botao-do-cartao {
   max-width: 100%;
   padding: 0.5rem;
-  background-color: blue;
+  background-color: rgb(6, 6, 179);
   color: #eee;
   font-weight: bold;
   border: none;
